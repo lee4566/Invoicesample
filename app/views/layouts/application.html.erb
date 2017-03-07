@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+  <title>Sample Invoices</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+<%=link_to "Home",root_path %>
+
+<%=link_to "About Us ",index_about_path %>
+
+<%=link_to "FAQ ",index_faq_path %>
+
+<%=link_to "Pricing",index_pricing_path %>
+
+<%=link_to "Invoices",invoices_path %>
+
+<%=link_to "Login In",index_login_path %>
+
+<%=link_to "Contact Us",index_contact_path %>
 <%= yield %>
 
 </body>
